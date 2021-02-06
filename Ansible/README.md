@@ -90,7 +90,7 @@ The machines on the internal network are not exposed to the public Internet.
 Only the ____whitelisted IP VM_+ 
 Elk VM  machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
 TODO: 
-96.255.46.155 and 
+<home IP add> and 
 157.55.198.166
 Machines within the network can only be accessed by ___single server/ ssh__.
 TODO: Which machine did you allow to access your ELK VM? Jumpbox
