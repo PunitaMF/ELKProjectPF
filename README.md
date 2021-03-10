@@ -88,7 +88,7 @@ Access Policies
 The machines on the internal network are not exposed to the public Internet.
 Only the ____whitelisted IP VM_+ 
 Elk VM  machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-TODO: 
+
 96.255.46.155 and 
 157.55.198.166
 Machines within the network can only be accessed by ___single server/ ssh__.
@@ -114,7 +114,7 @@ No
 
 Elk Configuration
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
-TODO: What is the main advantage of automating configuration with Ansible?
+What is the main advantage of automating configuration with Ansible?
 The primary benefit of Ansible is it allows IT administrators to automate away the drudgery from their daily tasks. That frees them to focus on efforts that help deliver more value to the business by spending time on more important tasks.
 https://wtop.com/open-first/2017/05/5-primary-reasons-for-the-popularity-of-ansible/#:~:text=The%20primary%20benefit%20of%20Ansible,time%20on%20more%20important%20tasks.
 The playbook implements the following tasks:
