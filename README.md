@@ -132,7 +132,8 @@ Enable docker +launch docker container:elk
 ...
 The following screenshot displays the result of running docker ps after successfully configuring the ELK instance.
 
-![](Diagrams/Screen Shot 2021-01-27 at 5.56.26 PM.png)
+#### Infrastructure IO Diagram
+https://github.com/PunitaMF/ELKProjectPF/blob/main/Diagrams/Screen%20Shot%202021-01-22%20at%2011.04.24%20AM.png
 
 Note: The following image link needs to be updated. Replace docker_ps_output.png with the name of your screenshot image file.
 
