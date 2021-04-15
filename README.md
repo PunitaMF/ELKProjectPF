@@ -1,52 +1,11 @@
-Automated ELK Stack Deployment
+### Automated ELK Stack Deployment
 The files in this repository were used to configure the network depicted below.
 Note: The following image link needs to be updated. Replace diagram_filename.png with the name of your diagram image file.
 https://drive.google.com/file/d/1oxZc93JeMGpbNmax0AS7543aor_13wIB/view
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the “ansible playbook elk.yml”  file may be used to install only certain pieces of it, such as Filebeat.
 
----
-- name: Config elk VM with Docker
-  hosts: elk
-  become: True
-  tasks:
-  - name: Set the vm.max_map_count to 262144 in sysctl
-    sysctl: name={{ item.key }} value={{ item.value }}
-    with_items:
-      - { key: "vm.max_map_count", value: "262144" }
-
-  - name: docker.io
-    apt:
-      force_apt_get: yes
-      update_cache: yes
-      name: docker.io
-      state: present
-
-  - name: Install pip3
-    apt:
-      force_apt_get: yes
-      name: python3-pip
-      state: present
-
-  - name: Install Docker python module
-    pip:
-      name: docker
-      state: present
-- name: download and launch a docker web container
-    docker_container:
-      name: elk
-      image: sebp/elk:761
-      state: started
-      restart_policy: always
-      published_ports:
-        - 5601:5601
-        - 9200:9200
-        - 5044:5044
-
-  - name: Enable docker service
-    systemd:
-      name: docker
-      enabled: yes
+#### Elk.yml
 This document contains the following details:
 Description of the Topologu
 Access Policies
